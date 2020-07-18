@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Title Tag -->
+    <title>CB KIVA</title>
+    <!-- <<Mobile Viewport Code>> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- <<Attched Stylesheets>> -->
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/media.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,400italic,800,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- \\ Begin Holder \\ -->
+<div class="DesignHolder">
+	<!-- \\ Begin Frame \\ -->
+	<div class="LayoutFrame">
+        <!-- \\ Begin Header \\ -->
+        <header>
+            <div class="Center">
+                <div class="site-logo">
+                  <h1><a href="index.html"><img src = "img/logoicon.png"></a></h1>
+                </div>
+               <div id="mobile_sec">
+               <div class="mobile"><i class="fa fa-bars"></i><i class="fa fa-times"></i></div>
+                <div class="menumobile">
+                    <!-- \\ Begin Navigation \\ -->
+                    <nav class="Navigation">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                            <li>
+                              <a href="#">About</a>
+                              <ul class="dropdown">
+                                <li><a href="about.html">Overview</a></li>
+                                <li><a href="goals.html">Goals</a></li>
+                              </ul>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                            <li>
+                                <a href="meetings.html">Meetings</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                            <li class  = "active">
+                                <a href="gallery.html">Gallery</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                            <li>
+                              <a href="#">Contact</a>
+                              <ul class="dropdown">
+                                <li><a href="contact.html">Reach Us</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                              </ul>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- // End Navigation // -->
+				</div>
+
+        </header>
+        <!-- // End Header // -->
+        <div class="Gallery_sec" id="gallery">
+            <div class="Center"><p><p>
+                <h2>Gallery</h2>
+                        <div class="Description">
+                            <h3>Pictures</h3>
+                          <p>Missed a meeting? Looking for pictures from last event?<br>Take a look below!<br>
+                          <a href="https://drive.google.com/drive/folders/1btM1U901_IOAYPxRtgwl2ZQxQrgLqNhR">KIVA 2018 Xmas Pictures</a>
+                <div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="img/kiva1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva7.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva9.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva10.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/kiva11.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+
+</div>
+
+  </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script><p><p>
+              </div>
+          </div>
+          <!-- \\ Begin Footer \\-->
+          <footer>
+              <div class="Cntr">
+                  <p>KIVA CB 2019</p>
+              </div>
+          </footer>
+          <!-- // End Footer // -->
+      </div>
+      <!-- // End Get Section // -->
+
+  </div>
+  <!-- // End Contact Section // -->
+  </div>
+  <!-- // End Container // -->
+  </div>
+  <!-- // End Layout Frame // -->
+  </div>
+  <!-- // End Design Holder // -->
+  <div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+  </div>
+
+  <!-- Attched Javascripts -->
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+
+
+  </body>
+  </html>
